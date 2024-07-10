@@ -15,8 +15,6 @@
         rel="stylesheet">
 </head>
 <style>
-
-
     body {
         background-image: url(bghero.jpg);
         background-position: cover;
@@ -25,62 +23,81 @@
         font-style: normal;
         font-size: 1rem;
     }
-    .btn-grey{
+
+    .btn-grey {
         background-color: brown;
-        color:white
+        color: white
     }
-    .btn-grey:hover{
+
+    .btn-grey:hover {
         background-color: lightcoral;
         color: black;
     }
-    ul,h4{
+
+    ul,
+    h4 {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-size: 1.2rem;
     }
 
-    ul li{
+    ul li {
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         font-style: normal;
         font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        button{
+            margin:auto
+        }
     }
 </style>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Chaye</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="https://www.linkedin.com/in/cahyo-saputra-a26411204/"><i class="bi bi-linkedin"></i></a>
-              <a class="nav-link" href="https://github.com/cahyo988"><i class="bi bi-github"></i></a>
-              <a class="nav-link" href="https://www.instagram.com/saputracah_/"><i class="bi bi-instagram"></i></a>
+            <a class="navbar-brand" href="#">Chaye</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="https://www.linkedin.com/in/cahyo-saputra-a26411204/"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a class="nav-link" href="https://github.com/cahyo988"><i class="bi bi-github"></i></a>
+                    <a class="nav-link" href="https://www.instagram.com/saputracah_/"><i
+                            class="bi bi-instagram"></i></a>
 
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
-    <main class="container my-5">
-        <div class="card p-5 text-center" style="width: 100%;">
-            <h4>Your Activity List</h4>
-            <div class="input-group mb-3">
-                <input type="text" id="new-task" class="form-control" placeholder="Input Activity">
-                <select id="day-select" class="form-select">
-                    <option value="Monday">Monday</option>
-                    <option value="Tuesday">Tuesday</option>
-                    <option value="Wednesday">Wednesday</option>
-                    <option value="Thursday">Thursday</option>
-                    <option value="Friday">Friday</option>
-                    <option value="Saturday">Saturday</option>
-                    <option value="Sunday">Sunday</option>
-                </select>
-                <input type="time" id="time-input" class="form-control" style="width: 100px;">
-                <button onclick="addTask()" class="btn btn-grey">add</button>
+    </nav>
+    <main class="container my-5 text-center">
+        <div class="card p-3">
+            <h4 class="mb-3 text-center ">Daily Schedule</h4>
+            <div class="d-flex justify-content-center">
+                <div class="input-group mb-3">
+                    <div class="col-md-12 text-center">
+                        <input type="text" id="new-task" class="form-control mb-3" placeholder="Input Activity">
+                        <select id="day-select" class="form-select mb-3">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                        <input type="time" id="time-input" class="form-control mb-3" style="width: 100px;">
+                        <button onclick="addTask()" class="btn btn-grey">add</button>
+                    </div>
+
+                </div>
             </div>
+
         </div>
 
 

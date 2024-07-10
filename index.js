@@ -12,7 +12,7 @@ const loadTasks = () => {
         const cardBody = `
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">${day}</h5>
+                    <h5 class="card-title"><i class="bi bi-balloon-heart-fill"></i> ${day}<i class="bi bi-balloon-heart"></i></h5>
                     <ul class="list-group" id="${day}-list">
                     ${tasks.map((task, index) => `
                         <li class="list-group-item d-flex justify-content-between align-items-center">
